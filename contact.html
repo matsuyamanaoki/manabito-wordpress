@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>前売り券申し込み - 日本の景色写真展</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/logo.gif" width="258" height="64" alt="日本の景色写真展">
+      </a>
+    </div>
+    <nav class="nav-global">
+      <ul>
+        <li>
+          <a href="about.html">展覧会について</a>
+        </li>
+        <li>
+          <a href="schedule.html">スケジュール</a>
+        </li>
+        <li>
+          <a href="gallery.html">作品紹介</a>
+        </li>
+        <li>
+          <a href="contact.html">前売り券申し込み</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <nav class="breadcrumb">
+    <ol>
+      <li>
+        <a href="index.html">ホーム</a>
+      </li>
+      <li>
+        前売り券申し込み
+      </li>
+    </ol>
+  </nav>
+  <div class="eye-catch"></div>
+  <div class="contents">
+    <main>
+      <h1>前売り券申し込み</h1>
+      <section class="l-section">
+        <p>各会場の前売り券をこちらよりお申し込みいただけます。下記の手順をよく読んでからお申し込みください。</p>
+        <ol class="contact-caution-list">
+          <li>「お名前」、「メールアドレス」を記入し、「ご希望会場」を選択してお申し込みください。</li>
+          <li>お申し込み後、メールが送信され、前売り券の番号が発行されます。</li>
+          <li>当日、会場の受付で前売り券の番号をご提示いただき、料金をお支払いください。</li>
+        </ol>
+        <form class="contact-form" action="" method="POST">
+          <table>
+            <tr>
+              <th scope="row">
+                <label for="name">お名前（必須）</label>
+              </th>
+              <td>
+                <input type="text" name="name" id="name" required>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <label for="mail">メールアドレス（必須）</label>
+              </th>
+              <td>
+                <input type="email" name="mail" id="mail" required>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <label for="pref">ご希望会場</label>
+              </th>
+              <td>
+                <select name="pref" id="pref">
+                  <option value="0">東京</option>
+                  <option value="1">大阪</option>
+                  <option value="2">福岡</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <label for="other">備考</label>
+              </th>
+              <td>
+                <textarea name="other" id="other"></textarea>
+              </td>
+            </tr>
+          </table>
+          <input type="submit" value="申し込み内容の確認">
+        </form>
+      </section>
+    </main>
+    <aside>
+      <div class="side-bnr">
+        <a href="gallery.html">
+          <img src="images/btn_gallery.jpg" width="200" height="114" alt="作品紹介">
+        </a>
+      </div>
+      <div class="side-bnr">
+        <a href="contact.html">
+          <img src="images/btn_tickets.jpg" width="200" height="84" alt="前売り券申し込み">
+          <span>前売り券好評発売中</span>
+        </a>
+      </div>
+    </aside>
+  </div>
+  <nav id="page_top" class="page-top"><a href="javascript: void(0);">ページの先頭へ戻る</a></nav>
+  <footer>
+    <address>電話 0120-XXX-001 FAX 0120-XXX-002</address>
+    <small class="copyright">copyright 2015 日本の景色写真展 All rights reserved.</small>
+  </footer>
+</body>
+</html>

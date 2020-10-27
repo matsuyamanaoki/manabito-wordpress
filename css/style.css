@@ -1,0 +1,324 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+body, a {
+  color: #333;
+  text-decoration: none;
+}
+
+h1, h2, p, figure {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header,
+.breadcrumb,
+.eye-catch,
+.contents,
+.page-top,
+footer {
+  margin: 0 auto;
+  width: 840px;
+}
+
+header {
+  margin-bottom: 20px;
+  padding: 30px 0 0;
+}
+
+.logo {
+  margin: 0 0 20px;
+  text-align: center;
+}
+
+.nav-global ul {
+  display: flex;
+}
+
+.nav-global li {
+  width: 25%;
+}
+
+.nav-global a {
+  align-items: center;
+  background-color: #f2f3f4;
+  border: solid 1px #e1e2e3;
+  display: flex;
+  font-size: 1.6rem;
+  justify-content: center;
+  height: 60px;
+  letter-spacing: 2px;
+}
+
+.nav-global li:not(:last-child) a {
+  border-right: none;
+}
+
+.nav-global a:hover {
+  background-color: #f00;
+  color: #fff;
+}
+
+.breadcrumb {
+  margin: 0 auto 30px;
+}
+
+.breadcrumb ol {
+  display: flex;
+}
+
+.breadcrumb li:not(:last-child)::after {
+  content: ">";
+  margin: 0 10px;
+}
+
+.breadcrumb a {
+  text-decoration: underline;
+}
+
+.contents {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 70px;
+}
+
+main {
+  width: 610px;
+}
+
+h1 {
+  background-image: url(../images/h1_top.png), url(../images/h1_bottom.png);
+  background-position: left top, right bottom;
+  background-repeat: no-repeat, no-repeat;
+  font-size: 2.4rem;
+  margin: 0 0 30px;
+  padding: 30px 0;
+  text-align: center;
+}
+
+aside {
+  width: 200px;
+}
+
+.side-bnr:not(:last-child) {
+  margin: 0 0 30px;
+}
+
+.side-bnr a {
+  display: block;
+  text-align: center;
+}
+
+.page-top {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 auto 10px;
+}
+
+.page-top a {
+  background: url(../images/pagetop.gif) no-repeat left center;
+  display: inline-block;
+  text-align: right;
+  text-decoration: underline;
+  width: 150px;
+}
+
+footer {
+  background-color: #f5f6f7;
+  border: solid 1px #f3f4f5;
+  padding: 20px 0 10px;
+  text-align: center;
+}
+
+footer address {
+  font-style: normal;
+  margin: 0 0 4px;
+}
+
+.copyright {
+  font-size: 1.4rem;
+}
+
+.eye-catch {
+  margin: 0 auto 30px;
+}
+
+.eye-catch .bx-wrapper {
+  border: none;
+  box-shadow: none;
+  margin: 0;
+}
+
+.l-section:not(:last-child) {
+  margin: 0 0 60px;
+}
+
+.section-title {
+  background: url(../images/h2.gif) no-repeat left center;
+  margin: 0 0 20px;
+  padding: 0 0 0 20px;
+}
+
+.l-section p:not(:last-child) {
+  margin: 0 0 20px;
+}
+
+.topics-list li {
+  border-bottom: dashed 1px #d9d9db;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 20px;
+}
+
+.topics-list li:not(:last-child) {
+  margin: 0 0 20px;
+}
+
+.topics-list time {
+  font-weight: bold;
+  width: 130px;
+}
+
+.topics-list .topics-title {
+  width: 470px;
+}
+
+.image-left {
+  float: left;
+  margin: 0 30px 30px 0;
+}
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.l-schedule {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.l-schedule caption {
+  margin: 0 0 30px;
+  text-align: left;
+}
+
+.l-schedule caption span {
+  font-weight: bold;
+}
+
+.l-schedule thead {
+  background-color: #323334;
+  color: #fff;
+}
+
+.l-schedule th,
+.l-schedule td {
+  border: solid 1px #765744;
+  padding: 18px 0;
+  text-align: center;
+}
+
+.l-schedule thead th:first-child,
+.l-schedule tbody th {
+  width: 180px;
+}
+
+.l-schedule thead th:last-child,
+.l-schedule tbody td:last-child {
+  width: 150px;
+}
+
+.l-schedule tbody tr:nth-child(even) {
+  background-color: #f1f2f3;
+}
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.gallery-list li {
+  margin: 0 0 30px;
+  width: 290px;
+}
+
+.gallery-list li:nth-last-child(-n+2) {
+  margin: 0;
+}
+
+.gallery-list img {
+  display: flex;
+}
+
+.contact-caution-list {
+  list-style: decimal;
+  margin: 0 0 30px;
+  padding: 0 0 0 40px;
+}
+
+.contact-form table {
+  border-collapse: collapse;
+  margin: 0 0 30px;
+  width: 100%;
+}
+
+.contact-form table th,
+.contact-form table td {
+  border: solid 1px #765744;
+}
+
+.contact-form table th {
+  padding: 10px 0;
+  width: 200px;
+}
+
+.contact-form table td {
+  padding: 10px;
+}
+
+.contact-form input[type=text],
+.contact-form input[type=email] {
+  width: 250px;
+}
+
+.contact-form input[type=text],
+.contact-form input[type=email],
+.contact-form select,
+.contact-form textarea {
+  padding: 4px;
+}
+
+.contact-form textarea {
+  display: flex;
+  height: 150px;
+  resize: none;
+  width: 100%;
+}
+
+.contact-form input[type=submit] {
+  border: solid 1px #d2d3d4;
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  width: 160px;
+}
