@@ -3,13 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <title>日本の景色写真展</title>
-<link rel="stylesheet" href="css/reset.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-<link rel="stylesheet" href="css/style.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-<script src="js/pagetop.js"></script>
-<script src="js/slide.js"></script>
 <?php wp_head(); ?>
 </head>
 <body>
