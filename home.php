@@ -2,13 +2,13 @@
   <div id="eye_catch" class="eye-catch">
     <ul>
       <li>
-        <img src="images/pickup1.jpg" width="840" height="404" alt="企画展覧会。日本×写真。開催期間2015年8月28日より東京、大阪、福岡、名古屋、仙台巡回">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/pickup1.jpg" width="840" height="404" alt="企画展覧会。日本×写真。開催期間2015年8月28日より東京、大阪、福岡、名古屋、仙台巡回">
       </li>
       <li>
-        <img src="images/pickup2.jpg" width="840" height="404" alt="全国から集まった写真、約200点展示">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/pickup2.jpg" width="840" height="404" alt="全国から集まった写真、約200点展示">
       </li>
       <li>
-        <img src="images/pickup3.jpg" width="840" height="404" alt="壁に風景写真が3点掛けられている">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/pickup3.jpg" width="840" height="404" alt="壁に風景写真が3点掛けられている">
       </li>
     </ul>
   </div>
@@ -39,12 +39,12 @@
     <aside>
       <div class="side-bnr">
         <a href="gallery.html">
-          <img src="images/btn_gallery.jpg" width="200" height="114" alt="作品紹介">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/btn_gallery.jpg" width="200" height="114" alt="作品紹介">
         </a>
       </div>
       <div class="side-bnr">
         <a href="contact.html">
-          <img src="images/btn_tickets.jpg" width="200" height="84" alt="前売り券申し込み">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/btn_tickets.jpg" width="200" height="84" alt="前売り券申し込み">
           <span>前売り券好評発売中</span>
         </a>
       </div>

@@ -1,15 +1,20 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html <?php language_attributes(); ?>>
 <head>
-<meta charset="UTF-8">
-<title>日本の景色写真展</title>
+<meta charset="<?php bloginfo( 'charset' ); ?>">
 <?php wp_head(); ?>
 </head>
 <body>
   <header>
     <div class="logo">
-      <a href="index.html">
-        <img src="images/logo.gif" width="258" height="64" alt="日本の景色写真展">
+      <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+        <?php
+				if ( has_custom_logo() ) {
+					$custom_logo_id = get_theme_mod( 'custom_logo' );
+					$image = wp_get_attachment_image_src( $custom_logo_id, 'full' );
+					var_dump( $image );
+				}
+				?>
       </a>
     </div>
     <nav class="nav-global">
