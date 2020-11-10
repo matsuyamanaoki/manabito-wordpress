@@ -1,4 +1,11 @@
 <?php
+function theme_setup() {
+	add_theme_support( 'title-tag' );
+
+	add_theme_support( 'custom-logo' );
+
+}
+add_action( 'after_setup_theme', 'theme_setup' );
 function theme_styles() {
 	wp_enqueue_style( 'theme-reset',get_template_directory_uri() . '/css/reset.css', array(), null );
 	wp_enqueue_style( 'bxslider-style', 'https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css', array( 'theme-reset' ), null);
