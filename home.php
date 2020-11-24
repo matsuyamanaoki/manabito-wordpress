@@ -36,18 +36,7 @@
         </ol>
       </section>
     </main>
-    <aside>
-      <div class="side-bnr">
-        <a href="gallery.html">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/btn_gallery.jpg" width="200" height="114" alt="作品紹介">
-        </a>
-      </div>
-      <div class="side-bnr">
-        <a href="contact.html">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/btn_tickets.jpg" width="200" height="84" alt="前売り券申し込み">
-          <span>前売り券好評発売中</span>
-        </a>
-      </div>
-    </aside>
+
+		<?php get_sidebar(); ?>
   </div>
   <?php get_footer(); ?>
