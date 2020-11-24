@@ -29,9 +29,11 @@ add_action( 'wp_enqueue_scripts', 'theme_scripts' );
 
 function theme_widgets_init() {
 	register_sidebar( array(
-		'name'        => 'Sidebar',
-		'id'          => 'sidebar-1',
-		'description' => '右のサイドバーエリア'
+		'name'          => 'Sidebar',
+		'id'            => 'sidebar-1',
+		'description'   => '右のサイドバーエリア',
+		'before_widget' => '<div id="%1$s" class="%2$s">',
+		'after_widget'  => '</div>'
 	));
 }
 add_action( 'widgets_init', 'theme_widgets_init' );
