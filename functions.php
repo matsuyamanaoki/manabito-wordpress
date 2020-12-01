@@ -7,8 +7,25 @@ function theme_setup() {
 	register_nav_menus( array(
 		'global' => 'Global Menu'
 	) );
+
+	theme_remove_action_head();
 }
 add_action( 'after_setup_theme', 'theme_setup' );
+
+function theme_remove_action_head() {
+	remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+	remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
+	remove_action( 'wp_print_styles',     'print_emoji_styles' );
+	remove_action( 'admin_print_styles',  'print_emoji_styles' );
+	add_filter( 'emoji_svg_url', '__return_false' );
+	remove_action( 'wp_head', 'wp_shortlink_wp_head' );
+	remove_action( 'wp_head', 'wlwmanifest_link' );
+	remove_action( 'wp_head', 'wp_generator' );
+	remove_action( 'wp_head', 'rsd_link' );
+	remove_filter( 'the_content', 'wpautop' );
+	add_filter( 'user_can_richedit', '__return_false' );
+}
+
 function theme_styles() {
 	wp_enqueue_style( 'theme-reset',get_template_directory_uri() . '/css/reset.css', array(), null );
 	wp_enqueue_style( 'bxslider-style', 'https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css', array( 'theme-reset' ), null);
