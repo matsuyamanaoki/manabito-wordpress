@@ -17,22 +17,27 @@
       <section class="l-section">
         <h2 class="section-title">トピックス</h2>
         <ol class="topics-list">
-          <li>
-            <time datetime="2015-09-20">2015年09月20日</time>
-            <span class="topics-title">総入場者数が1万人を突破いたしました。</span>
-          </li>
-          <li>
-            <time datetime="2015-09-18">2015年09月18日</time>
-            <span class="topics-title">大阪会場で展覧会がスタートいたしました。たくさんの皆様のご来場をお待ちしております。</span>
-          </li>
-          <li>
-            <time datetime="2015-09-13">2015年09月13日</time>
-            <span class="topics-title">9月下旬に大阪会場で写真家5名によるギャラリートークを開催いたします。詳しい日程は決まり次第お知らせいたします。</span>
-          </li>
-          <li>
-            <time datetime="2015-09-10">2015年09月10日</time>
-            <span class="topics-title">東京会場は終了いたしました。たくさんの皆様のご来場ありがとうございました。</span>
-          </li>
+					<?php
+					if ( have_posts() ) :
+						while ( have_posts() ) :
+							the_post();
+					?>
+					<li>
+						<time datetime="<?php the_time( 'Y-m-d' ); ?>">
+							<?php the_time( get_option( 'date_format' ) ); ?>
+						</time>
+						<span class="topics-title">
+							<a href="<?php the_permalink(); ?>">
+								<?php the_title(); ?>
+							</a>
+						</span>
+					</li>
+					<?php
+						endwhile;
+					else:
+					?>
+					<li>現在お知らせはありません。</li>
+				<?php endif; ?>
         </ol>
       </section>
     </main>
